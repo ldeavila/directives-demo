@@ -2,11 +2,11 @@
   'use strict';
 
   angular.module('app')
-    .directive('myBackButton', ['$window', function ($window) {
+    .directive('myCancelButton', ['$window', function ($window) {
 
       return {
         restrict: 'E',
-        templateUrl: './app/components/my-back-button/my-back-button-directive.html',
+        templateUrl: 'app/components/my-cancel-button/my-cancel-button-directive.html',
         link: function (scope, element) {
           element.bind('click', function () {
             $window.history.back();

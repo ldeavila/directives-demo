@@ -2,15 +2,27 @@
 <html lang="en" data-ng-app="app" data-ng-strict-di>
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
-  <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./bower_components/angular/angular.min.js"></script>
+  <title>Directives Demo</title>
 
-  <script src="./app.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/app.css" rel="stylesheet">
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+  <script src="app.js"></script>
+  <script src="app/home-page/home-page-controller.js"></script>
+  <script src="app/components/my-cancel-button/my-cancel-button-directive.js"></script>
+  <script src="app/cancel-button-page/cancel-button-page-controller.js"></script>
+  <script src="app/custom-form-input-page/custom-form-input-page-controller.js"></script>
+  <script src="app/contextual-nav-bar-page/contextual-nav-bar-page-controller.js"></script>
+  <script src="app/some-other-page/some-other-page-controller.js"></script>
 </head>
-<body>
+<body data-ng-view>
 </body>
 </html>
