@@ -13,7 +13,8 @@
       return {
         restrict: 'E',
         scope: {
-          user: '='
+          user: '<',
+          search: '=?'
         },
         templateUrl: 'app/components/my-navbar/my-navbar-directive.html',
         link: function (scope) {
