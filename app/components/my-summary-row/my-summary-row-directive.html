@@ -1,0 +1,22 @@
+<div class="form-group">
+  <label class="col-lg-2 control-label">{{description}}</label>
+  <div class="col-lg-4">
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Initial Value"
+      ng-readonly="{{isInitialReadonly}}"
+      ng-model="value.initial">
+  </div>
+  <div class="col-lg-4">
+    <input
+      type="number"
+      required
+      class="form-control"
+      name="updated"
+      placeholder="Updated Value"
+      ng-model="value.updated">
+  </div>
+  <label class="col-lg-1 control-label"
+         ng-class="{'red': calculator() < 0}">{{calculator() | currency}}</label>
+</div>

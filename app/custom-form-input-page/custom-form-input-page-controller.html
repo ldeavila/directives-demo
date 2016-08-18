@@ -22,8 +22,24 @@
 </nav>
 
 <div class="container">
-
   <div class="starter-template">
+
+    <form name="vm.myForm" class="form-horizontal">
+      <p>Data Row 1 on Controller: {{vm.values[0].initial}} {{vm.values[0].updated}}</p>
+      <my-summary-row
+          description="Data Row 1"
+        value="vm.values[0]"
+        calculator="vm.values[0].initial - vm.values[0].updated">
+      </my-summary-row>
+
+      <p>Data Row 2 on Controller: {{vm.values[1].initial}} {{vm.values[1].updated}}</p>
+      <my-summary-row
+        description="Data Row 2"
+        is-initial-readonly="{{vm.isReadOnly}}"
+        value="vm.values[1]"
+        calculator="vm.difference(vm.values[1].initial, vm.values[1].updated)">
+      </my-summary-row>
+    </form>
   </div>
 
 </div><!-- /.container -->
